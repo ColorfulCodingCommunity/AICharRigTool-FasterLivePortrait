@@ -1,3 +1,15 @@
+## AICharRigTool
+Follow the instructions for running locally with TRT.  (We used Docker image)
+
+When converting .onnx to .trt files I had to manually run again, for some reason, the following command:
+`python scripts/onnx2trt.py -o ./checkpoints/liveportrait_onnx/motion_extractor.onnx -p fp32`
+
+To run back-end run 
+`python cc_AICharRig_img2img-control.py --cfg configs/trt_infer.yaml`
+from inside Docker image.
+
+---
+(ORIGINAL REPO)
 ## FasterLivePortrait: Bring portraits to life in Real Time!
 <a href="README.md">English</a> | <a href="README_ZH.md">中文</a>
 
