@@ -156,6 +156,8 @@ if __name__ == "__main__":
     )
     parser.add_argument("-v", "--verbose", action="store_true", help="Enable more verbose log output")
     args = parser.parse_args()
+    
+    args.onnx = args.onnx.rstrip()
     if args.engine is None:
         args.engine = args.onnx.replace(".onnx", ".trt")
     main(args)
