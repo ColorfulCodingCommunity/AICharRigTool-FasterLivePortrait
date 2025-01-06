@@ -8,6 +8,8 @@ To run back-end run
 `python cc_AICharRig_img2img-control.py --cfg configs/trt_infer.yaml`
 from inside Docker image.
 
+Notices:
+- Not tested with animal models
 ---
 (ORIGINAL REPO)
 ## FasterLivePortrait: Bring portraits to life in Real Time!
